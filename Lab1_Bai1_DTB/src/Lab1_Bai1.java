@@ -15,7 +15,11 @@ public class Lab1_Bai1 {
 		System.out.print("Điểm TB: ");
 		double diemTB = scanner.nextDouble();
 		
+		//xuat thong tin ra man hinh
+		System.out.printf("%s %.2f điểm\n", hoten, diemTB);
 		
+		//dong Scanner
+		scanner.close();
 	}
 
 }
