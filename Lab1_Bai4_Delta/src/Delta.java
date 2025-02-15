@@ -14,7 +14,22 @@ public class Delta {
 		System.out.print("Nhap he so c: ");
 		double c = scanner.nextDouble();
 		
+		//tinh delta
+		double delta = Math.pow(b, 2) - 4 * a * c;
 		
+		// Xuất thông tin ra màn hình
+        System.out.printf("Delta: %.2f\n", delta);
+        
+        // Kiểm tra giá trị của delta
+        if (delta < 0) {
+            System.out.println("Phương trình vô nghiệm do delta âm.");
+        } else {
+            double canDelta = Math.sqrt(delta);
+            System.out.printf("Căn delta: %.2f\n", canDelta);
+        }
+		
+		//dong Scanner
+		scanner.close();
 	}
 
 }
